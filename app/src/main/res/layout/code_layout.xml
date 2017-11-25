@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/signup_bg"
+        android:scaleType="centerCrop" />
+
+    <binaryblitz.gethelpapp.Custom.BoldRobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Введите код"
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="ОК"
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:layout_marginTop="116dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:paddingLeft="38dp"
+        android:paddingRight="38dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="75dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="назад"
+        android:id="@+id/button2"
+        android:layout_gravity="center"
+        android:layout_marginTop="116dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:paddingLeft="38dp"
+        android:paddingRight="38dp"
+        android:textSize="12sp"
+        android:layout_marginRight="75dp" />
+
+    <binaryblitz.gethelpapp.Custom.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView3"
+        android:layout_gravity="center"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="144dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Код подтверждения"
+        app:met_iconPadding="2dp"
+        app:met_baseColor="#212121"
+        app:met_primaryColor="#212121"
+        app:met_textColorHint="#727272"
+        app:met_iconLeft="@drawable/pass"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelText="Код подтверждения"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:id="@+id/edittext1"
+        android:inputType="phone"
+        android:layout_marginTop="46dp" />
+
+</FrameLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_gravity="left|top"
+        android:src="@drawable/signup_bg"
+        android:scaleType="centerCrop" />
+
+    <binaryblitz.gethelpapp.Custom.ThinRobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GetHelp"
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="32dp" />
+
+    <binaryblitz.gethelpapp.Custom.BoldRobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Добро пожаловать!"
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="8dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Начать"
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:layout_marginTop="86dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:paddingLeft="38dp"
+        android:paddingRight="38dp"
+        android:textSize="18sp" />
+
+    <binaryblitz.gethelpapp.Custom.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView3"
+        android:layout_gravity="center"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="144dp" />
+</FrameLayout>

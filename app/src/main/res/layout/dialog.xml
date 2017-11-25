@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/numberPicker1"
+        android:layout_toRightOf="@+id/numberPicker1"
+        android:text="ОТМЕНА"
+        android:layout_gravity="right|bottom"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="#cf621f"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toLeftOf="@+id/numberPicker1"
+        android:text="ВЫБРАТЬ"
+        android:layout_gravity="left|bottom"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="#f36c12"
+        android:textColor="#ffffff" />
+
+    <binaryblitz.gethelpapp.Custom.NumberPicker
+        android:id="@+id/numberPicker1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:solidColor="#ffffff" />
+
+</FrameLayout>

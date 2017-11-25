@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GetHelp</string>
+    <string name="str1"><u>Как это работает</u></string>
+    <string name="str2"><u>Пользовательское соглашение</u></string>
+    <string name="str3"><u>Написать разработчикам</u></string>
+    <string name="str4"><u>Политика конфиденциальности</u></string>
+    <string name="str5"><u>Публичная оферта #2</u></string>
+</resources>

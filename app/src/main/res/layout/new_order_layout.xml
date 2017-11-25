@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f1f1f1">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:minHeight="?attr/actionBarSize">
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/action_bar">
+
+                <binaryblitz.gethelpapp.Custom.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Новый заказ"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/date_text_view"
+                    android:gravity="center_vertical"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="60dp" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:id="@+id/imageView4"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/back"
+                    android:padding="17dp" />
+
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            card_view:cardCornerRadius="4dp"
+            android:layout_weight="1.0"
+            android:layout_marginBottom="8dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+                <binaryblitz.gethelpapp.Custom.BoldRobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Домашнее задание"
+                    android:id="@+id/textView10"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#212121"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="98dp"
+                    android:id="@+id/imageView3"
+                    android:layout_gravity="center"
+                    android:src="@drawable/normal_help"
+                    android:layout_marginBottom="4dp" />
+
+                <binaryblitz.gethelpapp.Custom.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Помощь с домашним заданием к определенному дню"
+                    android:id="@+id/textView11"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textColor="#727272"
+                    android:gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view2d"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            card_view:cardCornerRadius="4dp"
+            android:layout_weight="1.0"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+                <binaryblitz.gethelpapp.Custom.BoldRobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Срочная помощь"
+                    android:id="@+id/textView10f"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#212121"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="98dp"
+                    android:id="@+id/imageView3f"
+                    android:layout_gravity="center"
+                    android:src="@drawable/express_help"
+                    android:layout_marginBottom="4dp" />
+
+                <binaryblitz.gethelpapp.Custom.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Срочная помощь на контрольной или экзамене"
+                    android:id="@+id/textView11f"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textColor="#727272"
+                    android:gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>

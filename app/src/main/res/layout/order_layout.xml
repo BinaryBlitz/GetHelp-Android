@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f1f1f1"
+    android:id="@+id/main">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="#e1e1e1">
+    </android.support.v4.view.ViewPager>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:minHeight="?attr/actionBarSize">
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/action_bar"
+                android:background="@color/colorPrimary">
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:id="@+id/imageView4"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/back"
+                    android:padding="17dp" />
+                <binaryblitz.gethelpapp.Custom.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Заказ"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/date_text_view"
+                    android:gravity="center_vertical"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="60dp" />
+
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabMinWidth="128dp"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabTextColor="#fafafa"
+            app:tabIndicatorColor="#ffffff"
+            app:tabIndicatorHeight="3dp"
+            android:gravity="bottom"
+            android:background="#e1e1e1" />
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottom"
+        android:background="#ffffff"
+        android:visibility="gone">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите сообщение"
+            app:met_iconPadding="2dp"
+            app:met_baseColor="#212121"
+            app:met_primaryColor="#212121"
+            app:met_textColorHint="#212121"
+            android:layout_gravity="center"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="72dp"
+            android:id="@+id/edittext1"
+            android:inputType="text"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageView6"
+            android:src="@drawable/attach"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:padding="4dp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageView7"
+            android:src="@drawable/send"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="12dp"
+            android:padding="7dp" />
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

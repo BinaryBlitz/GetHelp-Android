@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:id="@+id/popup_window">
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:elevation="5dp"
+        android:background="#bb000000"
+        android:minHeight="?attr/actionBarSize">
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/action_bar">
+
+            <ImageView
+                android:id="@+id/drawer_indicator"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_gravity="start"
+                android:src="@drawable/back"
+                android:padding="16dp" />
+
+            <binaryblitz.gethelpapp.Custom.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/date_text_view"
+                android:textAllCaps="false"
+                android:gravity="center_vertical"
+                android:typeface="sans"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="56dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/drawer_indicatorfdfd"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_gravity="right"
+                android:src="@drawable/share"
+                android:padding="16dp" />
+
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+</FrameLayout>
